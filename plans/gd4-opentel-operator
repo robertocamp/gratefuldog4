@@ -1,0 +1,35 @@
+Terraform will perform the following actions:
+
+  # helm_release.opentelemetry_operator will be created
+  + resource "helm_release" "opentelemetry_operator" {
+      + atomic                     = false
+      + chart                      = "opentelemetry-operator"
+      + cleanup_on_fail            = false
+      + create_namespace           = true
+      + dependency_update          = false
+      + disable_crd_hooks          = false
+      + disable_openapi_validation = false
+      + disable_webhooks           = false
+      + force_update               = false
+      + id                         = (known after apply)
+      + lint                       = false
+      + manifest                   = (known after apply)
+      + max_history                = 0
+      + metadata                   = (known after apply)
+      + name                       = "opentelemetry-operator"
+      + namespace                  = "opentelemetry-operator-system"
+      + pass_credentials           = false
+      + recreate_pods              = false
+      + render_subchart_notes      = true
+      + replace                    = false
+      + repository                 = "https://open-telemetry.github.io/opentelemetry-helm-charts"
+      + reset_values               = false
+      + reuse_values               = false
+      + skip_crds                  = false
+      + status                     = "deployed"
+      + timeout                    = 300
+      + verify                     = false
+      + version                    = "0.16.0"
+      + wait                       = true
+      + wait_for_jobs              = false
+    }
